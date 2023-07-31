@@ -29,10 +29,34 @@
                 <div class="header__partnership">
                     <p class="header__partnership-text">Our Partnership </p>
                     <div class="header__partnership-inner">
-                        <a class="header__partnership-link" href="#!"><img class="header__partnership-img1" src="img/partnerships/01.png" alt="triveloky"></a>
-                        <a class="header__partnership-link" href="#!"><img class="header__partnership-img2" src="img/partnerships/02.png" alt="toket.com"></a>
-                        <a class="header__partnership-link" href="#!"><img src="img/partnerships/03.png" alt="aurbnb"></a>
-                        <a class="header__partnership-link" href="#!"><img src="img/partnerships/04.png" alt="tripadvisom"></a>
+                        <a class="header__partnership-link" href="#!">
+                            <picture class="header__partnership-img1">
+                                <source srcset="img/partnerships/01.avif" type="image/avif">
+                                <source srcset="img/partnerships/01.webp" type="image/webp">
+                                <img src="img/partnerships/01.png" alt="triveloky">
+                            </picture>
+                        </a>
+                        <a class="header__partnership-link" href="#!">
+                            <picture class="header__partnership-img2">
+                                <source srcset="img/partnerships/02.avif" type="image/avif">
+                                <source srcset="img/partnerships/02.webp" type="image/webp">
+                                <img src="img/partnerships/02.png" alt="toket.com">
+                            </picture>
+                        </a>
+                        <a class="header__partnership-link" href="#!">
+                            <picture>
+                                <source srcset="img/partnerships/03.avif" type="image/avif">
+                                <source srcset="img/partnerships/03.webp" type="image/webp">
+                                <img src="img/partnerships/03.png" alt="aurbnb">
+                            </picture>
+                        </a>
+                        <a class="header__partnership-link" href="#!">
+                            <picture>
+                                <source srcset="img/partnerships/04.avif" type="image/avif">
+                                <source srcset="img/partnerships/04.webp" type="image/webp">
+                                <img src="img/partnerships/04.png" alt="tripadvisom">
+                            </picture>
+                        </a>
                     </div>
                 </div> 
             </div>
@@ -59,9 +83,21 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide action__slide">
                             <div class="action">
-                                <img src="img/avatars/03.png" alt="avatar" class="action__img">
-                                <img src="img/avatars/02.png" alt="avatar" class="action__img">
-                                <img src="img/avatars/01.png" alt="avatar" class="action__img">
+                                <picture class="action__img">
+                                    <source srcset="img/avatars/03.avif" type="image/avif">
+                                    <source srcset="img/avatars/03.webp" type="image/webp">
+                                    <img src="img/avatars/03.png" alt="avatar">
+                                </picture>
+                                <picture class="action__img">
+                                    <source srcset="img/avatars/02.avif" type="image/avif">
+                                    <source srcset="img/avatars/02.webp" type="image/webp">
+                                    <img src="img/avatars/02.png" alt="avatar">
+                                </picture>
+                                <picture class="action__img">
+                                    <source srcset="img/avatars/01.avif" type="image/avif">
+                                    <source srcset="img/avatars/01.webp" type="image/webp">
+                                    <img src="img/avatars/01.png" alt="avatar">
+                                </picture>
                                 <dl class="action__inner">
                                     <dt class="action__title">1K+ People</dt>
                                     <dd class="action__subtitle">Successfully Getting Home</dd>
@@ -70,7 +106,11 @@
                         </div>
                         <div class="swiper-slide action__slide">
                             <div class="action">
-                                <img src="img/avatars/04.png" alt="avatar" class="action__img action__img--no-avatar">
+                                <picture class="action__img action__img--no-avatar">
+                                    <source srcset="img/avatars/04.avif" type="image/avif">
+                                    <source srcset="img/avatars/04.webp" type="image/webp">
+                                    <img src="img/avatars/04.png" alt="avatar">
+                                </picture>
                                 <dl class="action__inner">
                                     <dt class="action__title">56 Houses</dt>
                                     <dd class="action__subtitle">Sold Monthly</dd>
@@ -79,7 +119,11 @@
                         </div>
                         <div class="swiper-slide action__slide">
                             <div class="action">
-                                <img src="img/avatars/05.png" alt="avatar" class="action__img">
+                                <picture class="action__img action__img--no-avatar">
+                                    <source srcset="img/avatars/05.avif" type="image/avif">
+                                    <source srcset="img/avatars/05.webp" type="image/webp">
+                                    <img src="img/avatars/05.png" alt="avatar">
+                                </picture>
                                 <dl class="action__inner">
                                     <dt class="action__title">4K+</dt>
                                     <dd class="action__subtitle">People Looking for New Homes</dd>
@@ -140,11 +184,15 @@
             <template id="offer-template">
                 <div class="swiper-slide" data-offerType="{{offerType}}">
                     <article class="offer offer--badge-{{offerBadge}}">
-                        <div class="offer__img-block" data-img="img/offers/{{offerImage}}.jpg"></div>
+                        <div class="offer__img-block" data-img="{{offerImage}}"></div>
                         <h3 class="offer__title">{{offerTitle}}</h3>
                         <div class="offer__price">{{offerPrice}}</div>
                         <div class="offer__user user">
-                            <img src="img/avatars/{{userImage}}.png" alt="Dianne Russell" class="user__photo">
+                            <picture class="user__photo">
+                                <source srcset="img/avatars/{{userImage}}.avif" type="image/avif">
+                                <source srcset="img/avatars/{{userImage}}.webp" type="image/webp">
+                                <img src="img/avatars/{{userImage}}.png" alt="{{user__name}}">
+                            </picture>
                             <div class="user__inner">
                                 <h4 class="user__name">{{userName}}</h4>
                                 <p class="user__info">{{userInfo}}</p>
@@ -205,7 +253,11 @@
                 </div>
                 <div class="gallery__user-inner">
                     <div class="user">
-                        <img src="img/avatars/01.png" alt="Dianne Russell" class="user__photo">
+                        <picture class="user__photo">
+                            <source srcset="img/avatars/01.avif" type="image/avif">
+                            <source srcset="img/avatars/01.webp" type="image/webp">
+                            <img src="img/avatars/01.png" alt="Dianne Russell">
+                        </picture>
                         <div class="user__inner">
                             <h4 class="user__name">Dianne Russell</h4>
                             <p class="user__info">Manager Director</p>
@@ -224,9 +276,21 @@
             <div class="gallery__video-wrap">
                 <div class="gallery__video"></div>
                 <div class="gallery__images">
-                    <img src="img/gallery/01.jpg" alt="01" class="gallery__img">
-                    <img src="img/gallery/02.jpg" alt="02" class="gallery__img">
-                    <img src="img/gallery/03.jpg" alt="03" class="gallery__img">
+                    <picture class="gallery__img">
+                        <source srcset="img/gallery/01.avif" type="image/avif">
+                        <source srcset="img/gallery/01.webp" type="image/webp">
+                        <img src="img/gallery/01.jpg" alt="01">
+                    </picture>
+                    <picture class="gallery__img">
+                        <source srcset="img/gallery/02.avif" type="image/avif">
+                        <source srcset="img/gallery/02.webp" type="image/webp">
+                        <img src="img/gallery/02.jpg" alt="02">
+                    </picture>
+                    <picture class="gallery__img">
+                        <source srcset="img/gallery/03.avif" type="image/avif">
+                        <source srcset="img/gallery/03.webp" type="image/webp">
+                        <img src="img/gallery/03.jpg" alt="03">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -250,7 +314,11 @@
                         <p class="comment__text" data-swiper-parallax="-35">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
                         <div class="comment__user" data-swiper-parallax="-20">
                             <div class="user">
-                                <img src="img/avatars/05.png" alt="Dianne Russell" class="user__photo">
+                                <picture class="user__photo">
+                                    <source srcset="img/avatars/05.avif" type="image/avif">
+                                    <source srcset="img/avatars/05.webp" type="image/webp">
+                                    <img src="img/avatars/05.png" alt="Dianne Russell">
+                                </picture>
                                 <div class="user__inner">
                                     <h4 class="user__name">Dianne Russell</h4>
                                     <p class="user__info">Manager Director</p>
@@ -276,7 +344,11 @@
                         <p class="comment__text" data-swiper-parallax="-35"> Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
                         <div class="comment__user" data-swiper-parallax="-20">
                             <div class="user">
-                                <img src="img/avatars/08.png" alt="Dianne Russell" class="user__photo">
+                                <picture class="user__photo">
+                                    <source srcset="img/avatars/08.avif" type="image/avif">
+                                    <source srcset="img/avatars/08.webp" type="image/webp">
+                                    <img src="img/avatars/08.png" alt="Courtney Henry">
+                                </picture>
                                 <div class="user__inner">
                                     <h4 class="user__name">Courtney Henry</h4>
                                     <p class="user__info">CEO Andarafish</p>
@@ -302,7 +374,11 @@
                         <p class="comment__text" data-swiper-parallax="-35">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
                         <div class="comment__user" data-swiper-parallax="-20">
                             <div class="user">
-                                <img src="img/avatars/11.png" alt="Dianne Russell" class="user__photo">
+                                <picture class="user__photo">
+                                    <source srcset="img/avatars/11.avif" type="image/avif">
+                                    <source srcset="img/avatars/11.webp" type="image/webp">
+                                    <img src="img/avatars/11.png" alt="Esther Howard">
+                                </picture>
                                 <div class="user__inner">
                                     <h4 class="user__name">Esther Howard</h4>
                                     <p class="user__info">Head of Marketing</p>
