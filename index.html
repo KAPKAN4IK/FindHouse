@@ -20,11 +20,11 @@
                 <p class="header__text">Everything you need about finding your place to live will be here, where it will be <br> easier <span>for you</span></p>
                 <form class="header__search search">
                     <label class="search__inner">
-                        <span class="search__icon"></span>
+                        <span class="search__icon search__icon--point"></span>
                         <input class="search__input" type="text"
                             placeholder="Search for the location you want!">
                         </label>
-                        <button class="search__button">Search</button>
+                        <button class="search__button search__button--arrow">Search</button>
                 </form>
                 <div class="header__partnership">
                     <p class="header__partnership-text">Our Partnership </p>
@@ -60,6 +60,8 @@
                     </div>
                 </div> 
             </div>
+            <div style="position: absolute;" class="header__left-box-bg-red"></div>
+            <div style="position: absolute;" class="header__left-box-bg-pink"></div>
         </div>
     </div>
     <div class="header__right">
@@ -275,27 +277,82 @@
         </div>
         <div class="gallery__right gallery__side">
             <div class="gallery__video-wrap">
-                <div class="gallery__video"></div>
+                <a href="#video-popup" class="gallery__video popup-link"></a>
                 <div class="gallery__images">
-                    <picture class="gallery__img">
-                        <source srcset="img/gallery/01.avif" type="image/avif">
-                        <source srcset="img/gallery/01.webp" type="image/webp">
-                        <img src="img/gallery/01.jpg" alt="01">
-                    </picture>
-                    <picture class="gallery__img">
-                        <source srcset="img/gallery/02.avif" type="image/avif">
-                        <source srcset="img/gallery/02.webp" type="image/webp">
-                        <img src="img/gallery/02.jpg" alt="02">
-                    </picture>
-                    <picture class="gallery__img">
-                        <source srcset="img/gallery/03.avif" type="image/avif">
-                        <source srcset="img/gallery/03.webp" type="image/webp">
-                        <img src="img/gallery/03.jpg" alt="03">
-                    </picture>
+                    <a href="#gallery-popup" class="gallery__img-link popup-link">
+                        <picture class="gallery__img">
+                            <source srcset="img/gallery/01.avif" type="image/avif">
+                            <source srcset="img/gallery/01.webp" type="image/webp">
+                            <img src="img/gallery/01.jpg" alt="01">
+                        </picture>
+                    </a>
+                    <a href="#gallery-popup" class="gallery__img-link popup-link">
+                        <picture class="gallery__img">
+                            <source srcset="img/gallery/02.avif" type="image/avif">
+                            <source srcset="img/gallery/02.webp" type="image/webp">
+                            <img src="img/gallery/02.jpg" alt="02">
+                        </picture>
+                    </a>
+                    <a href="#gallery-popup" class="gallery__img-link popup-link">
+                        <picture class="gallery__img">
+                            <source srcset="img/gallery/03.avif" type="image/avif">
+                            <source srcset="img/gallery/03.webp" type="image/webp">
+                            <img src="img/gallery/03.jpg" alt="03">
+                        </picture>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <div id="video-popup" class="gallery__video-popup popup">
+        <div class="popup__body container">
+            <div class="popup__content">
+                <video controls src="video/video.mp4"></video>
+                <button class="popup__close close-popup">X</button>
+            </div>
+        </div>
+    </div>
+    <div id="gallery-popup" class="gallery__images-popup popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="swiper gallery__images-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class="popup__img">
+                                <source srcset="img/offers/01.avif" type="image/avif">
+                                <source srcset="img/offers/01.webp" type="image/webp">
+                                <img src="img/offers/01.jpg" alt="01">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="popup__img">
+                                <source srcset="img/offers/02.avif" type="image/avif">
+                                <source srcset="img/offers/02.webp" type="image/webp">
+                                <img src="img/offers/02.jpg" alt="02">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="popup__img">
+                                <source srcset="img/offers/03.avif" type="image/avif">
+                                <source srcset="img/offers/03.webp" type="image/webp">
+                                <img src="img/offers/03.jpg" alt="03">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="popup__img">
+                                <source srcset="img/offers/04.avif" type="image/avif">
+                                <source srcset="img/offers/04.webp" type="image/webp">
+                                <img src="img/offers/04.jpg" alt="04">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <button class="popup__close close-popup">X</button>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute;" class="gallery__bg-brown"></div>
+    <div style="position: absolute;" class="gallery__bg-red"></div>
 </section>
             <section class="comments" id="comments">
     <div class="subtitle subtitle--center comments__subtitle">
@@ -566,7 +623,75 @@
             </li>
         </ul>
     </div>
+    <div style="position: absolute;" class="articles__bg-brown"></div>
+    <div style="position: absolute;" class="articles__bg-red"></div>
 </section>
+            <section class="subscribe">
+    <div class="container subscribe__container">
+        <div class="subscribe__inner">
+            <h2 class="subscribe__title title title--center title--red">Subscribe For More Info
+                and update from Hounter</h2>
+            <form class="subscribe__search search search--shadow">
+                <label class="search__inner">
+                    <span class="search__icon search__icon--email"></span>
+                    <input class="search__input" type="text"
+                        placeholder="Your email here">
+                </label>
+                <button class="search__button">Subsribe Now</button>
+            </form>
+            <picture class="subscribe__decor" data-transform="5">
+                <source srcset="img/decor/01.avif" type="image/avif">
+                <source srcset="img/decor/01.webp" type="image/webp">
+                <img src="img/decor/01.jpg" alt="decor">
+            </picture>
+            <picture class="subscribe__decor" data-transform="6">
+                <source srcset="img/decor/02.avif" type="image/avif">
+                <source srcset="img/decor/02.webp" type="image/webp">
+                <img src="img/decor/02.jpg" alt="decor">
+            </picture>
+            <picture class="subscribe__decor" data-transform="5">
+                <source srcset="img/decor/03.avif" type="image/avif">
+                <source srcset="img/decor/03.webp" type="image/webp">
+                <img src="img/decor/03.jpg" alt="decor">
+            </picture>
+            <picture class="subscribe__decor" data-transform="6">
+                <source srcset="img/decor/04.avif" type="image/avif">
+                <source srcset="img/decor/04.webp" type="image/webp">
+                <img src="img/decor/04.jpg" alt="decor">
+            </picture>
+
+
+
+            <picture class="subscribe__decor" data-transform="7">
+                <source srcset="img/avatars/01.avif" type="image/avif">
+                <source srcset="img/avatars/01.webp" type="image/webp">
+                <img src="img/avatars/01.png" alt="decor">
+            </picture>
+            <picture class="subscribe__decor" data-transform="7">
+                <source srcset="img/avatars/02.avif" type="image/avif">
+                <source srcset="img/avatars/02.webp" type="image/webp">
+                <img src="img/avatars/02.png" alt="decor">
+            </picture>
+            <picture class="subscribe__decor" data-transform="8">
+                <source srcset="img/avatars/13.avif" type="image/avif">
+                <source srcset="img/avatars/13.webp" type="image/webp">
+                <img src="img/avatars/13.png" alt="decor">
+            </picture>
+            <picture class="subscribe__decor" data-transform="8">
+                <source srcset="img/avatars/11.avif" type="image/avif">
+                <source srcset="img/avatars/11.webp" type="image/webp">
+                <img src="img/avatars/11.png" alt="decor">
+            </picture>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
         </main>
          <footer id="footer" class="footer">
     <div class="footer__container container">
@@ -631,6 +756,8 @@
             </ul>
         </div>
     </div>
+    <div style="position: absolute;" class="footer__bg-violet"></div>
+    <div style="position: absolute;" class="footer__bg-red"></div>
 </footer>
     </div>
     <script src="js/main.min.js"></script>
