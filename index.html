@@ -16,15 +16,15 @@
     <div class="header__left">
         <div class="header__left-box">
             <div class="header__content">
-                <h1 class="header__title">find the place to live your dreams easily here</h1>
+                <h1 class="header__title _animate-hidden">find the place to live your dreams easily here</h1>
                 <p class="header__text">Everything you need about finding your place to live will be here, where it will be <br> easier <span>for you</span></p>
                 <form class="header__search search">
                     <label class="search__inner">
                         <span class="search__icon search__icon--point"></span>
                         <input class="search__input" type="text"
                             placeholder="Search for the location you want!">
-                        </label>
-                        <button class="search__button search__button--arrow">Search</button>
+                    </label>
+                    <button class="search__button search__button--arrow">Search</button>
                 </form>
                 <div class="header__partnership">
                     <p class="header__partnership-text">Our Partnership </p>
@@ -146,7 +146,7 @@
             <div class="subtitle__text">Our Recommendation</div>
         </div>
         <div class="houses__nav">
-            <h2 class="houses__title title">Featured House</h2>
+            <h2 class="houses__title title _animate-hidden">Featured House</h2>
             <div class="houses__nav-inner">
                 <button class="houses__nav-item houses__nav-item--active">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,10 +186,10 @@
             <template id="offer-template">
                 <div class="swiper-slide" data-offerType="{{offerType}}">
                     <article class="offer offer--badge-{{offerBadge}}">
-                        <div class="offer__img-block" data-img="{{offerImage}}"></div>
-                        <h3 class="offer__title">{{offerTitle}}</h3>
+                        <a href="#!" class="offer__img-block" data-img="{{offerImage}}"></a>
+                        <h3 class="offer__title"><a href="#!">{{offerTitle}}</a></h3>
                         <div class="offer__price">{{offerPrice}}</div>
-                        <div class="offer__user user">
+                        <a href="#!" class="offer__user user">
                             <picture class="user__photo">
                                 <source srcset="img/avatars/{{userImage}}.avif" type="image/avif">
                                 <source srcset="img/avatars/{{userImage}}.webp" type="image/webp">
@@ -199,7 +199,7 @@
                                 <h4 class="user__name">{{userName}}</h4>
                                 <p class="user__info">{{userInfo}}</p>
                             </div>
-                        </div>
+                        </a>
                     </article>
                 </div>
             </template>
@@ -214,7 +214,7 @@
                 <div class="subtitle__line"></div>
                 <div class="subtitle__text">Ready to Sell!</div>
             </div>
-            <h2 class="title gallery__title">Let’s tour and see our house!</h2>
+            <h2 class="title gallery__title _animate-hidden">Let’s tour and see our house!</h2>
             <div class="gallery__left-inner">
                 <p class="gallery__text">Houses recommended by our partners that have been curated to become the home of your dreams!</p>
                 <div class="gallery__detail">House Detail</div>
@@ -277,23 +277,23 @@
         </div>
         <div class="gallery__right gallery__side">
             <div class="gallery__video-wrap">
-                <a href="#video-popup" class="gallery__video popup-link"></a>
+                <a href="#video-popup" class="gallery__video popup-link _animate-hidden"></a>
                 <div class="gallery__images">
-                    <a href="#gallery-popup" class="gallery__img-link popup-link">
+                    <a href="#gallery-popup" class="gallery__img-link popup-link _animate-hidden">
                         <picture class="gallery__img">
                             <source srcset="img/gallery/01.avif" type="image/avif">
                             <source srcset="img/gallery/01.webp" type="image/webp">
                             <img src="img/gallery/01.jpg" alt="01">
                         </picture>
                     </a>
-                    <a href="#gallery-popup" class="gallery__img-link popup-link">
+                    <a href="#gallery-popup" class="gallery__img-link popup-link _animate-hidden">
                         <picture class="gallery__img">
                             <source srcset="img/gallery/02.avif" type="image/avif">
                             <source srcset="img/gallery/02.webp" type="image/webp">
                             <img src="img/gallery/02.jpg" alt="02">
                         </picture>
                     </a>
-                    <a href="#gallery-popup" class="gallery__img-link popup-link">
+                    <a href="#gallery-popup" class="gallery__img-link popup-link _animate-hidden">
                         <picture class="gallery__img">
                             <source srcset="img/gallery/03.avif" type="image/avif">
                             <source srcset="img/gallery/03.webp" type="image/webp">
@@ -307,7 +307,7 @@
     <div id="video-popup" class="gallery__video-popup popup">
         <div class="popup__body container">
             <div class="popup__content">
-                <video controls src="video/video.mp4"></video>
+                <video controls preload="metadata" src="video/video.mp4"></video>
                 <button class="popup__close close-popup">X</button>
             </div>
         </div>
@@ -359,12 +359,12 @@
         <div class="subtitle__line"></div>
         <div class="subtitle__text">See Our Review</div>
     </div>
-    <h2 class="title title--center comments__title">What Our User Say About Us</h2>
+    <h2 class="title title--center comments__title _animate-hidden">What Our User Say About Us</h2>
     <div class="comments__swiper swiper">
         <div class="comments__swiper-wrapper swiper-wrapper">
             <div class="comments__swiper-slide swiper-slide">
                 <div class="comment__slide">
-                    <div class="comment__slide-bg-wrap">
+                    <div class="comment__slide-bg-wrap _animate-hidden">
                         <div class="comment__slide-background" data-swiper-parallax="-10%"></div>
                     </div>
                     <div class="comment__content" data-swiper-parallax="-100" data-swiper-parallax-opacity=".4">
@@ -522,19 +522,19 @@
             <div class="subtitle__line"></div>
             <div class="subtitle__text">See tips and trick from our partnership</div>
         </div>
-        <h2 class="articles__title title title--center">Find out more about selling and buying homes</h2>
+        <h2 class="articles__title title title--center _animate-hidden">Find out more about selling and buying homes</h2>
         <button class="articles__more-btn">More Article</button>
         <ul class="articles__list">
             <li id="new-article" class="articles__item">
                 <article class="article">
-                    <a href="#!" class="article__img-link">
+                    <a href="#!" class="article__img-link _animate-hidden">
                         <picture class="article__img-src">
                             <source srcset="img/articles/01.avif" type="image/avif">
                             <source srcset="img/articles/01.webp" type="image/webp">
                             <img class="article__img" src="img/articles/01.jpg" alt="articleImg">
                         </picture>
                     </a>
-                    <div class="article__inner">
+                    <div class="article__inner _animate-hidden">
                         <div class="article__writer writer">
                             <picture>
                                 <source srcset="img/avatars/09.avif" type="image/avif">
@@ -551,14 +551,14 @@
             </li>
             <li class="articles__item">
                 <article class="article">
-                    <a href="#!" class="article__img-link">
+                    <a href="#!" class="article__img-link _animate-hidden">
                         <picture class="article__img-src">
                             <source srcset="img/articles/02.avif" type="image/avif">
                             <source srcset="img/articles/02.webp" type="image/webp">
                             <img class="article__img" src="img/articles/02.jpg" alt="articleImg">
                         </picture>
                     </a>
-                    <div class="article__inner">
+                    <div class="article__inner _animate-hidden">
                         <div class="article__writer writer">
                             <picture>
                                 <source srcset="img/avatars/10.avif" type="image/avif">
@@ -575,14 +575,14 @@
             </li>
             <li class="articles__item">
                 <article class="article">
-                    <a href="#!" class="article__img-link">
+                    <a href="#!" class="article__img-link _animate-hidden">
                         <picture class="article__img-src">
                             <source srcset="img/articles/03.avif" type="image/avif">
                             <source srcset="img/articles/03.webp" type="image/webp">
                             <img class="article__img" src="img/articles/03.jpg" alt="articleImg">
                         </picture>
                     </a>
-                    <div class="article__inner">
+                    <div class="article__inner _animate-hidden">
                         <div class="article__writer writer">
                             <picture>
                                 <source srcset="img/avatars/11.avif" type="image/avif">
@@ -599,14 +599,14 @@
             </li>
             <li class="articles__item">
                 <article class="article">
-                    <a href="#!" class="article__img-link">
+                    <a href="#!" class="article__img-link _animate-hidden">
                         <picture class="article__img-src">
                             <source srcset="img/articles/04.avif" type="image/avif">
                             <source srcset="img/articles/04.webp" type="image/webp">
                             <img class="article__img" src="img/articles/04.jpg" alt="articleImg">
                         </picture>
                     </a>
-                    <div class="article__inner">
+                    <div class="article__inner _animate-hidden">
                         <div class="article__writer writer">
                             <picture>
                                 <source srcset="img/avatars/12.avif" type="image/avif">
@@ -629,7 +629,7 @@
             <section class="subscribe">
     <div class="container subscribe__container">
         <div class="subscribe__inner">
-            <h2 class="subscribe__title title title--center title--red">Subscribe For More Info
+            <h2 class="subscribe__title title title--center title--red _animate-hidden">Subscribe For More Info
                 and update from Hounter</h2>
             <form class="subscribe__search search search--shadow">
                 <label class="search__inner">
@@ -642,22 +642,22 @@
             <picture class="subscribe__decor" data-transform="5">
                 <source srcset="img/decor/01.avif" type="image/avif">
                 <source srcset="img/decor/01.webp" type="image/webp">
-                <img src="img/decor/01.jpg" alt="decor">
+                <img class="_animate-hidden" src="img/decor/01.jpg" alt="decor">
             </picture>
             <picture class="subscribe__decor" data-transform="6">
                 <source srcset="img/decor/02.avif" type="image/avif">
                 <source srcset="img/decor/02.webp" type="image/webp">
-                <img src="img/decor/02.jpg" alt="decor">
+                <img class="_animate-hidden" src="img/decor/02.jpg" alt="decor">
             </picture>
             <picture class="subscribe__decor" data-transform="5">
                 <source srcset="img/decor/03.avif" type="image/avif">
                 <source srcset="img/decor/03.webp" type="image/webp">
-                <img src="img/decor/03.jpg" alt="decor">
+                <img class="_animate-hidden" src="img/decor/03.jpg" alt="decor">
             </picture>
             <picture class="subscribe__decor" data-transform="6">
                 <source srcset="img/decor/04.avif" type="image/avif">
                 <source srcset="img/decor/04.webp" type="image/webp">
-                <img src="img/decor/04.jpg" alt="decor">
+                <img class="_animate-hidden" src="img/decor/04.jpg" alt="decor">
             </picture>
 
 
@@ -665,22 +665,22 @@
             <picture class="subscribe__decor" data-transform="7">
                 <source srcset="img/avatars/01.avif" type="image/avif">
                 <source srcset="img/avatars/01.webp" type="image/webp">
-                <img src="img/avatars/01.png" alt="decor">
+                <img class="_animate-hidden" src="img/avatars/01.png" alt="decor">
             </picture>
             <picture class="subscribe__decor" data-transform="7">
                 <source srcset="img/avatars/02.avif" type="image/avif">
                 <source srcset="img/avatars/02.webp" type="image/webp">
-                <img src="img/avatars/02.png" alt="decor">
+                <img class="_animate-hidden" src="img/avatars/02.png" alt="decor">
             </picture>
             <picture class="subscribe__decor" data-transform="8">
                 <source srcset="img/avatars/13.avif" type="image/avif">
                 <source srcset="img/avatars/13.webp" type="image/webp">
-                <img src="img/avatars/13.png" alt="decor">
+                <img class="_animate-hidden" src="img/avatars/13.png" alt="decor">
             </picture>
             <picture class="subscribe__decor" data-transform="8">
                 <source srcset="img/avatars/11.avif" type="image/avif">
                 <source srcset="img/avatars/11.webp" type="image/webp">
-                <img src="img/avatars/11.png" alt="decor">
+                <img class="_animate-hidden" src="img/avatars/11.png" alt="decor">
             </picture>
         </div>
     </div>
