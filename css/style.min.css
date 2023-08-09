@@ -1002,6 +1002,11 @@ body {
 
 /* ============= My default blocks styles ============= */
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Lexend", sans-serif;
   font-weight: 500;
