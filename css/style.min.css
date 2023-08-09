@@ -1022,6 +1022,8 @@ body.lock {
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
+  background: url(../img/sprite.svg#background--violet) no-repeat bottom -395px right -395px, url(../img/sprite.svg#background--red) no-repeat bottom -135px right -556px;
+  background-size: 734px 678px, 734px 678px;
 }
 
 #main {
@@ -2475,6 +2477,7 @@ body.lock {
 }
 
 .footer {
+  overflow: hidden;
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -2572,7 +2575,6 @@ body.lock {
   z-index: -1;
   width: 734px;
   height: 678px;
-  background: url(../img/sprite.svg#background--violet) no-repeat center center/cover;
 }
 
 .footer__bg-red {
@@ -2581,7 +2583,6 @@ body.lock {
   z-index: -1;
   width: 734px;
   height: 678px;
-  background: url(../img/sprite.svg#background--red) no-repeat center center/cover;
 }
 
 @media (max-width: 1230px) {
